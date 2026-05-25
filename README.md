@@ -1,134 +1,175 @@
-🏥 Medical LLM Fine-Tuning using Unsloth + LLaMA 2
+# 🏥 Medical LLM Fine-Tuning using Unsloth + LLaMA 2
 
+This project demonstrates fine-tuning a Large Language Model (LLaMA 2 7B) using **Unsloth**, **LoRA**, and **4-bit quantization** on a custom medical Q&A dataset.
 
+The project was built and trained using Google Colab with a Tesla T4 GPU for efficient low-memory fine-tuning.
 
-This project demonstrates fine-tuning a large language model (LLaMA 2 7B) using Unsloth + LoRA + 4-bit quantization on a custom medical Q\&A dataset.
+---
 
+# 🚀 Features
 
+- Fine-tuned LLaMA 2 7B model
+- LoRA (Low-Rank Adaptation) training
+- 4-bit quantization for memory efficiency
+- Custom medical instruction dataset
+- Fast inference using Unsloth
+- Hugging Face + TRL integration
 
-🚀 Features
+---
 
-Fine-tuned LLaMA 2 7B using LoRA (efficient training)
+# 🧠 Technologies Used
 
-4-bit quantization for low GPU memory usage
+- Python
+- PyTorch
+- Unsloth
+- Hugging Face Transformers
+- TRL (SFTTrainer)
+- PEFT / LoRA
+- Google Colab
 
-Custom medical Q\&A dataset
+---
 
-Instruction-following format training
+# 📂 Project Structure
 
-Fast inference on Tesla T4 GPU
+```bash
+medical-llm-finetune-unsloth/
+│
+├── Arch_Medical_Finetuning.ipynb
+├── medical_data.json
+├── training_config.json
+├── inference.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── medical_model_lora/
+```
 
-🧠 Tech Stack
+---
 
-Python
+# 📊 Dataset
 
-PyTorch
+The model was trained on a custom medical Q&A dataset containing topics such as:
 
-HuggingFace Transformers
+- Hypertension
+- Diabetes
+- Pneumonia
+- Heart Failure
+- Atrial Fibrillation
+- ACE Inhibitors
+- Cortisol
+- Renal Function Tests
+- Statins
+- Insulin Regulation
 
-Unsloth
+Dataset format:
 
-TRL (SFTTrainer)
-
-LoRA (PEFT)
-
-📊 Dataset
-
-
-
-Custom medical dataset including:
-
-
-
-Hypertension
-
-Diabetes
-
-Heart failure
-
-Pneumonia
-
-Statins, insulin, ACE inhibitors, etc.
-
-
-
-Format:
-
-
-
+```json
 {
-
-&#x20; "instruction": "What is hypertension?",
-
-&#x20; "output": "Hypertension is a chronic condition..."
-
+  "instruction": "What is hypertension?",
+  "input": "",
+  "output": "Hypertension is a chronic condition..."
 }
+```
 
-⚙️ Training Details
+---
 
-Base Model: LLaMA 2 7B (4-bit)
+# ⚙️ Training Configuration
 
-Method: LoRA fine-tuning
+| Parameter | Value |
+|---|---|
+| Base Model | LLaMA 2 7B |
+| Quantization | 4-bit |
+| Fine-Tuning Method | LoRA |
+| Epochs | 3 |
+| Learning Rate | 2e-4 |
+| Batch Size | 2 |
+| GPU | Tesla T4 |
+| Framework | Unsloth |
 
-Epochs: 3
+---
 
-Batch Size: 2
+# 🚀 How to Run
 
-Learning Rate: 2e-4
+## 1️⃣ Install Dependencies
 
-Hardware: NVIDIA Tesla T4 (Google Colab)
+```bash
+pip install -r requirements.txt
+```
 
-🧪 Example Output
+---
 
+## 2️⃣ Open Notebook
 
+Run the training notebook:
 
-Input:
+```bash
+Arch_Medical_Finetuning.ipynb
+```
 
+---
 
+## 3️⃣ Run Inference
 
-What is hypertension?
-
-
-
-Output:
-
-
-
-Hypertension is a chronic condition where blood pressure is consistently elevated...
-
-
-
-🚀 How to Run
-
-pip install unsloth transformers datasets trl
-
-
-
-Run training:
-
-
-
-Arch\_Medical\_Finetuning.ipynb
-
-
-
-Run inference:
-
-
-
+```bash
 python inference.py
+```
 
-📌 Results
+---
 
-Successfully fine-tuned LLM using low VRAM (4-bit)
+# 🧪 Example Output
 
-Model responds to medical questions in instruction format
+## Input
 
-Efficient training using LoRA adapters
+```text
+What is hypertension?
+```
 
-📷 Screenshots
+## Output
 
+```text
+Hypertension is a chronic condition where blood pressure is consistently elevated. It increases the risk of heart disease, stroke, and kidney disease.
+```
 
+---
 
-(Add Colab training + inference screenshots here)
+# 📈 Results
 
+- Successfully fine-tuned a 7B parameter LLM on medical instructions
+- Reduced VRAM usage using 4-bit quantization + LoRA
+- Achieved efficient inference on consumer-grade GPUs
+
+---
+
+# 📷 Screenshots
+## Training process
+<img width="1914" height="575" alt="Screenshot 2026-05-25 222041" src="https://github.com/user-attachments/assets/c62f2f67-7d1e-4f63-8c93-b3ab6a05b16c" />
+## GPU utilization
+<img width="660" height="328" alt="Screenshot 2026-05-25 222543" src="https://github.com/user-attachments/assets/d681508c-1d20-42cd-8d31-eeb0d81de323" />
+## Inference results
+<img width="1687" height="499" alt="Screenshot 2026-05-25 223214" src="https://github.com/user-attachments/assets/9269f967-5966-405b-9a60-6d2a125d9401" />
+
+---
+
+# ⚠️ Disclaimer
+
+This project is for educational and research purposes only.  
+It is **not intended for real-world medical diagnosis or treatment**.
+
+---
+
+# 👨‍💻 Author
+
+Usman Chughtai
+
+---
+
+# ⭐ Future Improvements
+
+- Larger medical dataset
+- Better response formatting
+- Streamlit / Web UI deployment
+- Hugging Face deployment
+- Conversational memory support
+- Retrieval-Augmented Generation (RAG)
+
+```
