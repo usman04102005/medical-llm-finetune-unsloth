@@ -1,0 +1,10 @@
+{
+  "base_model": "unsloth/llama-2-7b-bnb-4bit",
+  "adapter_type": "LoRA",
+  "quantization": "4-bit",
+  "training_epochs": 3,
+  "learning_rate": 0.0002,
+  "dataset_size": 8,
+  "max_seq_length": 2048,
+  "trained_on": "Medical Q&A Dataset"
+}

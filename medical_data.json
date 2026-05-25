@@ -1,0 +1,52 @@
+[
+  {
+    "instruction": "What is hypertension?",
+    "input": "",
+    "output": "Hypertension is a chronic condition where blood pressure is consistently elevated (\u2265140/90 mmHg). It increases the risk of heart disease, stroke, and kidney disease. Management includes lifestyle changes and medications like ACE inhibitors or beta-blockers."
+  },
+  {
+    "instruction": "How is diabetes diagnosed?",
+    "input": "",
+    "output": "Diabetes is diagnosed through blood tests including fasting glucose (\u2265126 mg/dL), random glucose (\u2265200 mg/dL with symptoms), or HbA1c (\u22656.5%). Oral glucose tolerance test (OGTT) shows levels \u2265200 mg/dL after 2 hours."
+  },
+  {
+    "instruction": "What are the symptoms of pneumonia?",
+    "input": "",
+    "output": "Pneumonia symptoms include cough (often productive), fever, dyspnea, chest pain, and fatigue. Severity ranges from walking pneumonia to severe respiratory distress. Diagnosis via chest X-ray shows infiltrates. Treatment depends on cause (bacterial, viral, fungal)."
+  },
+  {
+    "instruction": "Explain the pathophysiology of heart failure",
+    "input": "",
+    "output": "Heart failure occurs when the heart cannot pump sufficient blood to meet body demands. Systolic dysfunction reduces ejection fraction (<40%), while diastolic dysfunction impairs filling. Compensatory mechanisms include increased afterload, sodium retention, and ventricular hypertrophy, eventually leading to pulmonary and systemic congestion."
+  },
+  {
+    "instruction": "What is the treatment for atrial fibrillation?",
+    "input": "",
+    "output": "AFib treatment includes rate control (beta-blockers, calcium channel blockers, digoxin), rhythm control (antiarrhythmics), anticoagulation (warfarin, DOACs), and addressing underlying causes. Catheter ablation is considered for symptomatic patients. CHA2DS2-VASc score guides anticoagulation decisions."
+  },
+  {
+    "instruction": "How do ACE inhibitors work?",
+    "input": "",
+    "output": "ACE inhibitors block angiotensin-converting enzyme, preventing conversion of angiotensin I to angiotensin II. This reduces vasoconstriction and aldosterone secretion, lowering blood pressure and reducing cardiac workload. Used for hypertension, heart failure, and post-MI management."
+  },
+  {
+    "instruction": "What is the role of cortisol in the body?",
+    "input": "",
+    "output": "Cortisol is a glucocorticoid hormone produced by the adrenal cortex, regulated by the HPA axis. It increases blood glucose, suppresses immune function, reduces inflammation, and maintains cardiovascular tone. Excess causes Cushing's syndrome; deficiency causes Addison's disease."
+  },
+  {
+    "instruction": "Explain renal function tests and their interpretation",
+    "input": "",
+    "output": "Renal function assessed via serum creatinine (normal 0.6-1.2 mg/dL), BUN (normal 7-20 mg/dL), and eGFR. eGFR <60 indicates kidney disease. Creatinine clearance estimates glomerular filtration rate. Abnormalities suggest acute kidney injury or chronic kidney disease."
+  },
+  {
+    "instruction": "What is the mechanism of action of statins?",
+    "input": "",
+    "output": "Statins inhibit HMG-CoA reductase, limiting cholesterol synthesis in hepatocytes. This increases LDL receptor expression, enhancing LDL uptake and reducing serum LDL. Also reduce triglycerides, increase HDL, and have anti-inflammatory effects. Used for dyslipidemia and cardiovascular prevention."
+  },
+  {
+    "instruction": "How does insulin regulate blood glucose?",
+    "input": "",
+    "output": "Insulin, secreted by pancreatic beta cells in response to elevated glucose, promotes glucose uptake in muscle and adipose tissue via GLUT4 transporters. It stimulates glycogen synthesis and inhibits gluconeogenesis and lipolysis. Insulin deficiency causes hyperglycemia and diabetes complications."
+  }
+]
