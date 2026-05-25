@@ -143,8 +143,10 @@ Hypertension is a chronic condition where blood pressure is consistently elevate
 # 📷 Screenshots
 ## Training process
 <img width="1914" height="575" alt="Screenshot 2026-05-25 222041" src="https://github.com/user-attachments/assets/c62f2f67-7d1e-4f63-8c93-b3ab6a05b16c" />
+
 ## GPU utilization
 <img width="660" height="328" alt="Screenshot 2026-05-25 222543" src="https://github.com/user-attachments/assets/d681508c-1d20-42cd-8d31-eeb0d81de323" />
+
 ## Inference results
 <img width="1687" height="499" alt="Screenshot 2026-05-25 223214" src="https://github.com/user-attachments/assets/9269f967-5966-405b-9a60-6d2a125d9401" />
 
